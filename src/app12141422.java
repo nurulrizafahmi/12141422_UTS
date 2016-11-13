@@ -7,5 +7,21 @@ public class app12141422 {
     int random, score=0;
     char jawab;
     
+    public void setPilih(String nama) {
+        this.nama = nama;
+    }
+    
+    public void setTebak(short tebak) {
+        this.tebak = tebak;
+    }
+    
+    public int Level(){
+        return level*5;
+    }
+    
+    public void hasilTebakan() {
+      kesempatan--;
+      banyak++;
+      
     
 }
