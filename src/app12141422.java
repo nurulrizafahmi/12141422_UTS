@@ -76,5 +76,26 @@ public class app12141422 {
         
         main.nama=inputString.nextLine();
         
-        
+        if (!"T".equals(main.nama))
+        {   
+            do {
+            System.out.println("# Level " + main.level);  
+            System.out.println("Selamat datang " + main.nama);   
+            System.out.println("Silakan tebak angka antara 1 s/d " + main.Level());    
+            System.out.println("Anda mempunyai kesempatan menebak " + main.kesempatan + " kali");  
+            
+            do{
+                System.out.println();   
+                System.out.println("Masukkan tebakan : "); 
+                main.tebak = inputAngka.nextShort();
+                main.hasilTebakan();
+            }while(main.tebak!=main.random&&main.kesempatan>0);
+            
+            main.Score();
+                System.out.println("Apakah anda ingin melanjutkan ke level berikutnya ? (y/t)");
+                main.jawab=inputString.nextLine().charAt(0);
+            }while(main.jawab=='y');
+        }
+    }
+    
 }
