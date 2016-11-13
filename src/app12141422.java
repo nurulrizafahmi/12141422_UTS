@@ -42,5 +42,25 @@ public class app12141422 {
         }
     }
     
+    public void Score() {
+        if (banyak>0){
+            score= 100*level;
+        }
+        if (banyak>1){
+            score= 70*level;
+        }
+        if (banyak>2){
+            score= 50*level;
+        }
+        if (banyak>3){
+            score= 30*level;
+        }
+        System.out.println(nama + "\t: " + score);
+        System.out.println("nurul\t: 70");
+        System.out.println("riza\t: 50");
+        System.out.println("fahmi\t: 100");
+        System.out.println("ahmad\t: 100");
+    }
+    
     
 }
