@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class app12141422 {
     String nama;
     byte level = 1;
@@ -62,5 +65,16 @@ public class app12141422 {
         System.out.println("ahmad\t: 100");
     }
     
-    
+    public static void main(String[] args) {
+        app12141422 main = new app12141422();
+        
+        main.random = (short) (Math.random()*main.Level());
+        System.out.println("Masukkan nama Anda untuk memulai atau tekan 'T' utuk keluar.");
+        
+        Scanner inputString = new Scanner(System.in);
+        Scanner inputAngka = new Scanner(System.in);
+        
+        main.nama=inputString.nextLine();
+        
+        
 }
